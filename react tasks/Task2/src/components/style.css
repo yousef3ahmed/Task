@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body { font-family: Arial; padding: 10px; background: white;}
+  
+  .header {  padding: 30px; text-align: center; background: white; }
+
+  .header h1 {  font-size: 50px; }
+  
+  .topnav { overflow: hidden; background-color: #333;}
+  
+  .topnav a {float: left; display: block; color: center;  text-align: center; padding: 14px ; text-decoration: none;}
+  
+  .topnav a:hover { background-color: white;  color: black;}
+  
+  .leftcolumn {    float: left;  width: 75%;}
+  
+  .rightcolumn {float: left; width: 25%; background-color: white; padding-left: 20px;}
+  
+  .row{display:flex;}
+  .row .leftcolumn {  flex: 65%; }
+
+  .row .rightcolumn { flex:35%; }
+
+  img {position: relative;}
+
+  .card { background-color: white; padding: 20px;  margin-top: 20px;}
+  
+  .footer { padding: 20px; text-align: center; background: white;margin-top: 20px; }
+
+    @media screen and (max-width: 700px) {
+    .row{display:block;}
+    .leftcolumn, .rightcolumn {     width: 100%;   padding: 0; }
+    img{ width: 100%;} 
+  }
+    @media screen and (max-width: 350px) { 
+      .row{display:block;}
+      .topnav a { float: none;   width: 100%; }
+  }
